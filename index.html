@@ -30,9 +30,27 @@
                             <input type="text" class="border w-20 px-2 rounded-xl" name="" id="traingle-height" placeholder="height">
                             <span class="ml-2">cm</span>
                         </p>
-                        <p>Area: <span id="result"></span></p>
+                        <p>Area: <span id="traingle-result">00</span> cm <sup>2</sup></p>
                         <div class="card-actions">
                             <button onclick="calculateTraingleArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rectangle Card-->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="/images/rectangle.png" alt="rectangle" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Rectangle</h2>
+                        <p>Area (A) = w * l</p>
+                        <p>
+                            <input type="text" class="border w-20 px-2 rounded-xl" name="" id="rectangle-width" placeholder="width">
+                            <span class="ml-2">cm</span>
+                            <input type="text" class="border w-20 px-2 rounded-xl" name="" id="rectangle-length" placeholder="length">
+                            <span class="ml-2">cm</span>
+                        </p>
+                        <p>Area: <span id="rectangle-result">00</span>cm<sup>2</sup></p>
+                        <div class="card-actions">
+                            <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
