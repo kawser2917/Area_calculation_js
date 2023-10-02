@@ -25,14 +25,14 @@
                         <h2 class="card-title">Traingle</h2>
                         <p>Area (A) = 0.5 * b * h</p>
                         <p>
-                            <input type="text" class="border w-20 px-2 rounded-xl" name="" id="" placeholder="base">
+                            <input type="text" class="border w-20 px-2 rounded-xl" name="" id="traingle-base" placeholder="base">
                             <span class="ml-2">cm</span>
-                            <input type="text" class="border w-20 px-2 rounded-xl" name="" id="" placeholder="height">
+                            <input type="text" class="border w-20 px-2 rounded-xl" name="" id="traingle-height" placeholder="height">
                             <span class="ml-2">cm</span>
                         </p>
-                        <p>Area <span></span></p>
+                        <p>Area: <span id="result"></span></p>
                         <div class="card-actions">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculateTraingleArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -67,6 +67,7 @@
             </div>
         </div>
     </main>
+    <script src="scripts/area-calculation.js"></script>
 
 </body>
 
