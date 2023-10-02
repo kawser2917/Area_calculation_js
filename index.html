@@ -11,6 +11,9 @@
 
 <body>
     <header>
+        <div class="bg-base-100 text-center mb-5 mt-5">
+            <a class="btn btn-ghost normal-case text-5xl">Area Calulation</a>
+        </div>
 
     </header>
     <main>
@@ -76,9 +79,9 @@
                     </div>
                 </div>
             </div>
-            <!-- parallelogram Card-->
+            <!-- Rhombus Card-->
             <div class="card bg-base-100 shadow-xl">
-                <figure><img src="/images/rhombus.png" alt="Parallelogram" /></figure>
+                <figure><img src="/images/rhombus.png" alt="Rhombus" /></figure>
                 <div class="card-body">
                     <h2 class="card-title">Rhombus</h2>
                     <p>Area (A) = 0.5 * d1 * d2 </p>
@@ -93,6 +96,46 @@
                     <p>Area: <span id="Rhombus-result">00</span>cm<sup>2</sup></p>
                     <div class="card-actions">
                         <button onclick="calculateRhombusArea()" class="btn btn-primary w-full">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!--Pentagon Card-->
+            <div class="card bg-base-100 shadow-xl">
+                <figure><img src="/images/pentagon.png" alt="Pentagon" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Pentagon</h2>
+                    <p>Area (A) = 0.5 * p * d </p>
+                    <p>
+                        <input type="text" class="border w-20 px-2 rounded-xl" name="" id="Pentagon-para"
+                            placeholder="parameter">
+                        <span class="ml-2">cm</span>
+                        <input type="text" class="border w-20 px-2 rounded-xl" name="" id="Pentagon-d"
+                            placeholder="anthom">
+                        <span class="ml-2">cm</span>
+                    </p>
+                    <p>Area: <span id="Pentagon-result">00</span>cm<sup>2</sup></p>
+                    <div class="card-actions">
+                        <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!--Ellipse Card-->
+            <div class="card bg-base-100 shadow-xl">
+                <figure><img src="/images/ellipse.png" alt="Ellipse" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Ellipse</h2>
+                    <p>Area (A) = pi * a * b </p>
+                    <p>
+                        <input type="text" class="border w-20 px-2 rounded-xl" name="" id="Ellipse-a-axis"
+                            placeholder="A axis">
+                        <span class="ml-2">cm</span>
+                        <input type="text" class="border w-20 px-2 rounded-xl" name="" id="Ellipse-b-axis"
+                            placeholder="B axis">
+                        <span class="ml-2">cm</span>
+                    </p>
+                    <p>Area: <span id="Ellipse-result">00</span>cm<sup>2</sup></p>
+                    <div class="card-actions">
+                        <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
                     </div>
                 </div>
             </div>

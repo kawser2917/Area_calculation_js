@@ -38,15 +38,31 @@ function calculateParallelogramArea(){
     setElementInnerText('Parallelogram-result',area)
 }
 // Rhombus Calculation with reusable funtionc
-
 function calculateRhombusArea(){
     const d1 = getInputValue("Rhombus-d1")
     const d2 = getInputValue('Rhombus-d2')
-
     const area = 0.5 * d1 * d2
-
     setElementInnerText("Rhombus-result",area)
 }
+// pentagon calculation with reusable js
+function calculatePentagonArea(){
+    const parameter = getInputValue("Pentagon-para")
+    const d = getInputValue("Pentagon-d")
+
+    const area = 0.5 * parameter * d
+
+    setElementInnerText("Pentagon-result",area)
+}
+// Ellipse calculation with js
+function calculateEllipseArea(){
+    const a_axis = getInputValue("Ellipse-a-axis")
+    const b_axis = getInputValue("Ellipse-b-axis")
+
+    const area = 3.1416 * a_axis * b_axis
+    setElementInnerText("Ellipse-result",area)
+}
+
+
 
 // reusable get input value function
 function getInputValue(inputId){
