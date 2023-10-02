@@ -29,13 +29,23 @@ function calculateRectangleArea(){
     rectangleResult.innerText = rectangleArea
  
 }
-// Resuable Function
+// Parallelogram reusable Function
 function calculateParallelogramArea(){
     const base = getInputValue("Parallelogram-base")
     const height = getInputValue("Parallelogram-height")
     const area = base * height
 
     setElementInnerText('Parallelogram-result',area)
+}
+// Rhombus Calculation with reusable funtionc
+
+function calculateRhombusArea(){
+    const d1 = getInputValue("Rhombus-d1")
+    const d2 = getInputValue('Rhombus-d2')
+
+    const area = 0.5 * d1 * d2
+
+    setElementInnerText("Rhombus-result",area)
 }
 
 // reusable get input value function
