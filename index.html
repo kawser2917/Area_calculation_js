@@ -15,74 +15,91 @@
     </header>
     <main>
         <!-- mian conatiner  -->
-        <div class="flex gap-3 flex-col lg:flex-row mt-5">
-            <!-- shape Container -->
-            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-                <!-- Traingle Card-->
-                <div class="card bg-base-100 shadow-xl">
-                    <figure><img src="/images/triangle.png" alt="rectangle" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Traingle</h2>
-                        <p>Area (A) = 0.5 * b * h</p>
-                        <p>
-                            <input type="text" class="border w-20 px-2 rounded-xl" name="" id="traingle-base" placeholder="base">
-                            <span class="ml-2">cm</span>
-                            <input type="text" class="border w-20 px-2 rounded-xl" name="" id="traingle-height" placeholder="height">
-                            <span class="ml-2">cm</span>
-                        </p>
-                        <p>Area: <span id="traingle-result">00</span> cm <sup>2</sup></p>
-                        <div class="card-actions">
-                            <button onclick="calculateTraingleArea()" class="btn btn-primary w-full">Calculate</button>
-                        </div>
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <!-- Traingle Card-->
+            <div class="card bg-base-100 shadow-xl">
+                <figure><img src="/images/triangle.png" alt="rectangle" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Traingle</h2>
+                    <p>Area (A) = 0.5 * b * h</p>
+                    <p>
+                        <input type="text" class="border w-20 px-2 rounded-xl" name="" id="traingle-base"
+                            placeholder="base">
+                        <span class="ml-2">cm</span>
+                        <input type="text" class="border w-20 px-2 rounded-xl" name="" id="traingle-height"
+                            placeholder="height">
+                        <span class="ml-2">cm</span>
+                    </p>
+                    <p>Area: <span id="traingle-result">00</span> cm <sup>2</sup></p>
+                    <div class="card-actions">
+                        <button onclick="calculateTraingleArea()" class="btn btn-primary w-full">Calculate</button>
                     </div>
                 </div>
-                <!-- Rectangle Card-->
-                <div class="card bg-base-100 shadow-xl">
-                    <figure><img src="/images/rectangle.png" alt="rectangle" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Rectangle</h2>
-                        <p>Area (A) = w * l</p>
-                        <p>
-                            <input type="text" class="border w-20 px-2 rounded-xl" name="" id="rectangle-width" placeholder="width">
-                            <span class="ml-2">cm</span>
-                            <input type="text" class="border w-20 px-2 rounded-xl" name="" id="rectangle-length" placeholder="length">
-                            <span class="ml-2">cm</span>
-                        </p>
-                        <p>Area: <span id="rectangle-result">00</span>cm<sup>2</sup></p>
-                        <div class="card-actions">
-                            <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="card bg-base-100 shadow-xl">
-                    <figure><img src="/images/rectangle.png" alt="rectangle" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- card 3 -->
-                <div class="card bg-base-100 shadow-xl">
-                    <figure><img src="/images/rectangle.png" alt="rectangle" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-            <!-- area Calculation -->
-            <div class="w-[400px]">
-                <h1 class="text-3xl">Area Calculation</h1>
-
+            <!-- Rectangle Card-->
+            <div class="card bg-base-100 shadow-xl">
+                <figure><img src="/images/rectangle.png" alt="rectangle" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Rectangle</h2>
+                    <p>Area (A) = w * l</p>
+                    <p>
+                        <input type="text" class="border w-20 px-2 rounded-xl" name="" id="rectangle-width"
+                            placeholder="width">
+                        <span class="ml-2">cm</span>
+                        <input type="text" class="border w-20 px-2 rounded-xl" name="" id="rectangle-length"
+                            placeholder="length">
+                        <span class="ml-2">cm</span>
+                    </p>
+                    <p>Area: <span id="rectangle-result">00</span>cm<sup>2</sup></p>
+                    <div class="card-actions">
+                        <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
+                    </div>
+                </div>
             </div>
+            <!-- parallelogram Card-->
+            <div class="card bg-base-100 shadow-xl">
+                <figure><img src="/images/parallelogram.png" alt="Parallelogram" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Parallelogram</h2>
+                    <p>Area (A) = b * h</p>
+                    <p>
+                        <input type="text" class="border w-20 px-2 rounded-xl" name="" id="Parallelogram-base"
+                            placeholder="base">
+                        <span class="ml-2">cm</span>
+                        <input type="text" class="border w-20 px-2 rounded-xl" name="" id="Parallelogram-height"
+                            placeholder="height">
+                        <span class="ml-2">cm</span>
+                    </p>
+                    <p>Area: <span id="Parallelogram-result">00</span>cm<sup>2</sup></p>
+                    <div class="card-actions">
+                        <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card bg-base-100 shadow-xl">
+                <figure><img src="/images/rectangle.png" alt="rectangle" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Shoes!</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="card bg-base-100 shadow-xl">
+                <figure><img src="/images/rectangle.png" alt="rectangle" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Shoes!</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
         </div>
     </main>
     <script src="scripts/area-calculation.js"></script>
